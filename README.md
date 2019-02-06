@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Chuck Norris Jokes App
 
 A React Application that consumes the [Chuck Norris API](https://api.chucknorris.io/)
-View App => [https://dreamertram.github.io/chucknorrisapp/](https://dreamertram.github.io/chucknorrisapp/)
+View App => 
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@ View App => [https://dreamertram.github.io/chucknorrisapp/](https://dreamertram.
 
 ## Running the Application Locally
 
-- Clone the app: `git clone git@github.com:dreamerTram/chucknorrisapp.git`
+- Clone the app:
 - Install packages: `yarn install`
 
 ## Scripts
