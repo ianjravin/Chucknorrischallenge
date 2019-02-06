@@ -1,0 +1,49 @@
+{
+  "name": "chucknorrisapp",
+  "homepage": "https://dreamerTram.github.io/chucknorrisapp",
+  "author": {
+    "name": "Mbarak Mbigo",
+    "email": "mbigombaraktram@gmail.com"
+  },
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "3.0.1",
+    "gh-pages": "1.2.0",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-redux": "5.0.7",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "redux": "4.0.0",
+    "redux-saga": "0.16.0",
+    "superagent": "3.8.3"
+  },
+  "devDependencies": {
+    "enzyme": "3.5.0",
+    "enzyme-adapter-react-16": "1.3.0",
+    "eslint-config-prettier": "3.0.1",
+    "eslint-plugin-prettier": "2.6.2",
+    "husky": "0.14.3",
+    "lint-staged": "7.2.2",
+    "prettier": "1.14.2",
+    "react-scripts": "1.1.5",
+    "redux-devtools": "3.4.1",
+    "styled-components": "3.4.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

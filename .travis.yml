@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "node"
+  - "8"
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - $HOME/.yarn-cache
+
+script:
+  - yarn test
+
+after_success:
+  - yarn deploy
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: build
+  keep-history: true
+  on:
+    branch: master
